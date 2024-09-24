@@ -4,95 +4,120 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
-  }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
-  }
-  
-  .navbar h1 {
-    color: #5fcf80;
-  }
-  
-  .navbar nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .navbar nav a:hover {
-    color: #5fcf80;
-  }
-  
-  /* Section principale */
-  .main-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80vh;
-    padding: 20px;
     background-image: url('./images/background.jpg');
     background-size: cover;
     background-position: center;
   }
   
-  .search-container {
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #ffffff;
+}
+
+.navbar h1 {
+    color: #5fcf80;
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar nav a:hover {
+    color: #5fcf80;
+}
+
+/* Section principale */
+.main-content {
+    height: 80vh;
+    padding: 20px;
+}
+
+#main-text {
+    color: white;
+    text-align: center;
+}
+
+#main-text h2 {
+    font-size: 1.8em;
+}
+
+#main-text p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Search Container */
+.search-container {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .search-container h2 {
-    color: #333;
-  }
-  
-  .search-container p {
-    color: #555;
-  }
-  
-  .search-container input, .search-container button {
+    width: 300px;
+}
+
+.search-container input, 
+.search-container button {
     display: block;
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
-  }
-  
-  .search-container button {
+    font-size: 1em;
+}
+
+.search-container button {
     background-color: #5fcf80;
     color: white;
     border: none;
     cursor: pointer;
-  }
-  
-  .search-container button:hover {
+}
+
+.search-container button:hover {
     background-color: #4caf6a;
-  }
-  
-  /* Info section avec l'image du train */
-  .info-container {
+}
+
+/* Info section with train image */
+.info-container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .train-icon img {
+    width: 300px;
+}
+
+.train-icon img {
     width: 100px;
     height: auto;
-  }
-  
-  .info-container p {
+}
+
+.info-container p {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 1.2em;
     color: #333;
-  }
-  
+}
+
+/* Adjust form styles */
+.search-container input::placeholder {
+    color: #999;
+    font-size: 0.9em;
+}
+
+.search-container input {
+    font-size: 1em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
