@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickethack</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <h1>Tickethack</h1>
+      <nav>
+        <a href="#">Cart</a>
+        <a href="#">Bookings</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <section class="main-content">
+    <div class="search-container">
+      <h2>Explore the world effortlessly by train!</h2>
+      <p>Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack.</p>
+
+      <!-- Search form -->
+      <form id="search-form">
+        <input type="text" id="departure" placeholder="Departure" required>
+        <input type="text" id="arrival" placeholder="Arrival" required>
+        <input type="date" id="date" required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <!-- Right section with train image -->
+    <div class="info-container">
+      <div class="train-icon">
+        <img src="images/train.png" alt="Train Icon">
+      </div>
+      <p>It's time to book your future trip.</p>
+    </div>
+  </section>
+
+  <!-- Script pour la gestion de la soumission du formulaire -->
+  <script src="script.js"></script>
+
+</body>
+</html>
