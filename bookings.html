@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>Bookings</title>
+    <title>Tickethack</title>
+    <link rel="stylesheet" href="style.css">
 
     <style>
         body {
@@ -12,6 +13,13 @@
             background-color: #eff1f0;
             color: black;
             background-image: none;
+        }
+        .logo a {
+            color: #5fcf80;
+            text-decoration: none;
+        }
+        .main-content {
+            align-content: space-evenly;
         }
         h1 {
             font-family: Arial, Helvetica, sans-serif;
@@ -23,6 +31,7 @@
             max-width: 1000px;
             padding: 30px 60px;
             margin: auto;
+            border-radius: 10px;
         }
         .tripContainer {
             background-color: #f4eeee;
@@ -32,6 +41,15 @@
             padding: 15px;
             border-radius: 5px;
             margin-bottom: 15px;
+        }
+        .tripContainer div {
+            width: 25%;
+        }
+        .tripName {
+            text-align: left;
+        }
+        .tripDeparture {
+            text-align: right;
         }
         .slogan {
             color: #609889;
@@ -52,9 +70,24 @@
       </style>
 </head>
 <body>
-    <div id="bookingsList">
 
-    </div>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo"><a href="index.html">Tickethack</a></h1>
+            <nav>
+                <a href="cart.html">Cart</a>
+                <a href="#">Bookings</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <section class="main-content">
+        <div id="bookingsList">
+
+        </div>
+    </section>
 
     <script src="bookings.js"></script>
 </body>
